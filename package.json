@@ -1,10 +1,11 @@
 {
   "name": "lib2020",
+  "author": "SirFizX",
   "version": "0.0.12",
   "description": "Package description.",
-  "homepage": "https://glitch.com/edit/#!/maintainer?path=README.md",
+  "homepage": "https://cs1.netlify.app/",
   "repository": {
-    "url": "https://glitch.com/edit/#!/maintainer"
+    "url": "https://github.com/EricEisaman/maintainer"
   },
   "license": "MIT",
   "keywords": [
