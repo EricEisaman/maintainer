@@ -24,8 +24,8 @@ ___
   - In the **Terminal** ```pnpm run dev```
   - <a href="https://maintainer.glitch.me/staging/" rel="noopener noreferrer">Show Staging Page</a>
 - Production Builds:
-  - In the **Terminal** ```pnpm run prod```
   - Edit the library name in **public/index.html**
+  - In the **Terminal** ```pnpm run prod```
   - <a href="https://maintainer.glitch.me" rel="noopener noreferrer">Show Production Page</a>
 
 
