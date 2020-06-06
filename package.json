@@ -16,12 +16,12 @@
   "main": "server.js",
   "scripts": {
     "version": "echo \"export const version = {version:'$npm_package_version'}\"  > src/modules/version.js",
-    "prod": "pnpm run version && rollup -c --environment PROD:1;npm-run-all l1 l2 m1 m2;refresh",
+    "prod": "pnpm run version && rollup -c --extend --environment PROD:1;npm-run-all l1 l2 m1 m2;refresh",
     "l1": "cp -v ./dist/$npm_package_version/$npm_package_name.min.js public/",
     "l2":"cp -v ./dist/$npm_package_version/$npm_package_name.min.js dist/latest/",
     "m1": "cp -v ./dist/$npm_package_version/$npm_package_name.min.js.map public/",
     "m2":"cp -v ./dist/$npm_package_version/$npm_package_name.min.js.map dist/latest/",
-    "dev": "pnpm run version && rollup -c --environment PROD:0;refresh",
+    "dev": "pnpm run version && rollup -c --extend --environment PROD:0;refresh",
     "npmrc": "echo \"//registry.npmjs.org/:_authToken=${NPM_TOKEN}\" > dist/.npmrc",
     "publish": "node pub-pj-update && pnpm run npmrc && cd /app/dist;npm publish",
     "start": "node server.js"
