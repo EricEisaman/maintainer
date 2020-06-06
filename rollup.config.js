@@ -3,7 +3,6 @@ import { terser } from "rollup-plugin-terser";
 import json from "rollup-plugin-json";
 import { string } from "rollup-plugin-string";
 
-console.log(process.env.PROD)
 const prod = Boolean(process.env.PROD==1);
 const version = process.env.npm_package_version;
 const name = process.env.npm_package_name;
