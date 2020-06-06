@@ -24,6 +24,7 @@
     "dev": "pnpm run version && rollup -c --extend --environment PROD:0;refresh",
     "npmrc": "echo \"//registry.npmjs.org/:_authToken=${NPM_TOKEN}\" > dist/.npmrc",
     "publish": "node pub-pj-update && pnpm run npmrc && cd /app/dist;npm publish",
+    "unpublish": "node unpub",
     "start": "node server.js"
   },
   "dependencies": {
